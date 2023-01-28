@@ -1,0 +1,12 @@
+package com.joedev.orderservice.service.client;
+
+import com.joedev.orderservice.dto.ClientDto;
+
+import java.util.List;
+
+public interface ClientService {
+    void saveClient(ClientDto clientDto);
+    void updateClient(ClientDto clientDto);
+    ClientDto getClientById(Long clientId);
+    List<ClientDto> getAllClients();
+}

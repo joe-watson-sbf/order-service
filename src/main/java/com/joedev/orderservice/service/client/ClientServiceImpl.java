@@ -9,6 +9,7 @@ import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Service;
 import java.util.List;
 
+import static com.joedev.orderservice.utils.ServiceUtils.requiredNonNonEmptyList;
 import static com.joedev.orderservice.utils.ServiceUtils.requiredNonNullObject;
 
 @Service
@@ -29,10 +30,17 @@ public class ClientServiceImpl implements ClientService{
     }
 
     @Override
+    public void saveClients(List<ClientDto> clientDtoList) {
+        requiredNonNonEmptyList(clientDtoList);
+        List<Client> clients = clientDtoList.stream().map(mapper::dtoToEntity).toList();
+        repository.saveAll(clients);
+    }
+
+    @Override
     public void updateClient(ClientDto clientDto) {
         requiredNonNullObject(clientDto);
         // VERIFY IF THE USER EXIST TO UPDATE
-        getClient(clientDto.id());
+        getClient(clientDto.getId());
         repository.save(mapper.dtoToEntity(clientDto));
     }
 
@@ -47,6 +55,7 @@ public class ClientServiceImpl implements ClientService{
                 .stream()
                 .map(mapper::entityToDto).toList();
     }
+
 
 
     private Client getClient(Long clientId){

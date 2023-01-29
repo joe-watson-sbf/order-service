@@ -43,10 +43,11 @@ public class DataMapper {
     }
 
     public OrderDetailsDto entityToDto(OrderDetails orderDetails){
-        return modelMapper.map(orderDetails, OrderDetailsDto.class);
+        ProductDto productDto = entityToDto(orderDetails.getProduct());
+        OrderDetailsDto orderDetailsDto = modelMapper.map(orderDetails, OrderDetailsDto.class);
+        orderDetailsDto.setProductDto(productDto);
+        return orderDetailsDto;
     }
-    public OrderDetails dtoToEntity(OrderDetailsDto orderDetailsDto){
-        return modelMapper.map(orderDetailsDto, OrderDetails.class);
-    }
+
 
 }

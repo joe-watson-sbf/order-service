@@ -1,0 +1,744 @@
+
+// api to generate data : mockaroo.com
+### ADD LIST CLIENTS
+
+POST http://localhost:8080/api/clients/list
+Content-Type: application/json
+
+[
+  {
+    "name": "Sauveur Borrow",
+    "address": "54773 Heffernan Court"
+  },
+  {
+    "name": "Natalie Duxbury",
+    "address": "279 Bartelt Pass"
+  },
+  {
+    "name": "Kenon Joysey",
+    "address": "5 Gerald Terrace"
+  },
+  {
+    "name": "Belita Mapplethorpe",
+    "address": "319 Dayton Pass"
+  },
+  {
+    "name": "Lettie Drust",
+    "address": "7 Ruskin Circle"
+  },
+  {
+    "name": "Corie Brimson",
+    "address": "48 Hoepker Hill"
+  },
+  {
+    "name": "Oona Bruhnke",
+    "address": "91745 Southridge Court"
+  },
+  {
+    "name": "Rosetta Sleith",
+    "address": "158 Eastlawn Hill"
+  },
+  {
+    "name": "Kaile Zanazzi",
+    "address": "8 Fulton Parkway"
+  },
+  {
+    "name": "Care Richardot",
+    "address": "15243 Fair Oaks Alley"
+  },
+  {
+    "name": "Melvin Scarfe",
+    "address": "3878 Prentice Parkway"
+  },
+  {
+    "name": "Tomlin Shotbolt",
+    "address": "485 Division Alley"
+  },
+  {
+    "name": "Shandie Franklin",
+    "address": "29 Rieder Trail"
+  },
+  {
+    "name": "Muffin Irlam",
+    "address": "5748 Mandrake Junction"
+  },
+  {
+    "name": "Seline Jobin",
+    "address": "73 Troy Park"
+  },
+  {
+    "name": "Petronille Felce",
+    "address": "7481 Dexter Hill"
+  },
+  {
+    "name": "Faydra Auger",
+    "address": "8 Crescent Oaks Center"
+  },
+  {
+    "name": "Melamie Tiley",
+    "address": "713 Bultman Hill"
+  },
+  {
+    "name": "Calvin Roycroft",
+    "address": "8 East Place"
+  },
+  {
+    "name": "Dallas Vernay",
+    "address": "42436 Summit Circle"
+  },
+  {
+    "name": "Egor Gossling",
+    "address": "912 Fairfield Lane"
+  },
+  {
+    "name": "Nigel Featherstonhalgh",
+    "address": "47927 Texas Circle"
+  },
+  {
+    "name": "Jase Bayliss",
+    "address": "13649 Sycamore Avenue"
+  },
+  {
+    "name": "Celle Renbold",
+    "address": "6339 Mendota Junction"
+  },
+  {
+    "name": "Normy Schaffler",
+    "address": "5 Donald Court"
+  },
+  {
+    "name": "Bobette Demann",
+    "address": "78 Hagan Hill"
+  },
+  {
+    "name": "Kessiah Crosier",
+    "address": "15521 Nova Street"
+  },
+  {
+    "name": "Elset Stickler",
+    "address": "165 Blue Bill Park Road"
+  },
+  {
+    "name": "Harriot Griswood",
+    "address": "36541 Carpenter Plaza"
+  },
+  {
+    "name": "Felicity Faulconbridge",
+    "address": "22 Little Fleur Parkway"
+  },
+  {
+    "name": "Henryetta Wansbury",
+    "address": "196 Jenifer Point"
+  }
+]
+
+
+### ADD LIST PRODUCTS
+
+POST http://localhost:8080/api/products/list
+Content-Type: application/json
+
+[
+  {
+    "address": "980 Clove Parkway",
+    "name": "Mazda",
+    "price": 360269,
+    "quantity": 5
+  },
+  {
+    "address": "4 Holy Cross Circle",
+    "name": "Ford",
+    "price": 796532,
+    "quantity": 15
+  },
+  {
+    "address": "2 Hollow Ridge Avenue",
+    "name": "Lexus",
+    "price": 129276,
+    "quantity": 10
+  },
+  {
+    "address": "69 Cottonwood Park",
+    "name": "Hyundai",
+    "price": 370430,
+    "quantity": 39
+  },
+  {
+    "address": "73676 Warner Lane",
+    "name": "Acura",
+    "price": 734711,
+    "quantity": 35
+  },
+  {
+    "address": "646 Debra Avenue",
+    "name": "Suzuki",
+    "price": 711389,
+    "quantity": 19
+  },
+  {
+    "address": "093 Hermina Drive",
+    "name": "Chevrolet",
+    "price": 729034,
+    "quantity": 42
+  },
+  {
+    "address": "5 Eagan Circle",
+    "name": "Volkswagen",
+    "price": 826737,
+    "quantity": 38
+  },
+  {
+    "address": "08685 Norway Maple Avenue",
+    "name": "MINI",
+    "price": 750736,
+    "quantity": 25
+  },
+  {
+    "address": "19149 Leroy Plaza",
+    "name": "Toyota",
+    "price": 523331,
+    "quantity": 21
+  },
+  {
+    "address": "8935 Stuart Point",
+    "name": "Toyota",
+    "price": 805499,
+    "quantity": 9
+  },
+  {
+    "address": "9 Basil Lane",
+    "name": "Lotus",
+    "price": 612072,
+    "quantity": 15
+  },
+  {
+    "address": "379 Bobwhite Point",
+    "name": "Daihatsu",
+    "price": 192539,
+    "quantity": 19
+  },
+  {
+    "address": "87322 Kennedy Way",
+    "name": "Lincoln",
+    "price": 769846,
+    "quantity": 7
+  },
+  {
+    "address": "21290 Upham Park",
+    "name": "Ford",
+    "price": 596676,
+    "quantity": 50
+  },
+  {
+    "address": "8010 Hoard Point",
+    "name": "Infiniti",
+    "price": 34254,
+    "quantity": 29
+  },
+  {
+    "address": "204 Bashford Lane",
+    "name": "Mitsubishi",
+    "price": 157248,
+    "quantity": 23
+  },
+  {
+    "address": "1 Little Fleur Place",
+    "name": "Chevrolet",
+    "price": 271132,
+    "quantity": 41
+  },
+  {
+    "address": "4 Dawn Center",
+    "name": "Lincoln",
+    "price": 37107,
+    "quantity": 11
+  },
+  {
+    "address": "1103 Mitchell Park",
+    "name": "Chevrolet",
+    "price": 272270,
+    "quantity": 27
+  },
+  {
+    "address": "231 Russell Road",
+    "name": "Ford",
+    "price": 746270,
+    "quantity": 48
+  },
+  {
+    "address": "120 Westport Place",
+    "name": "Cadillac",
+    "price": 450312,
+    "quantity": 38
+  },
+  {
+    "address": "8001 Spenser Drive",
+    "name": "Ford",
+    "price": 749953,
+    "quantity": 50
+  },
+  {
+    "address": "7642 Bartillon Lane",
+    "name": "Ford",
+    "price": 289294,
+    "quantity": 19
+  },
+  {
+    "address": "6419 Hanover Way",
+    "name": "Suzuki",
+    "price": 783917,
+    "quantity": 9
+  },
+  {
+    "address": "27 Bluestem Road",
+    "name": "Dodge",
+    "price": 298462,
+    "quantity": 35
+  },
+  {
+    "address": "792 Sundown Avenue",
+    "name": "Hyundai",
+    "price": 667713,
+    "quantity": 23
+  },
+  {
+    "address": "2662 Anderson Hill",
+    "name": "Audi",
+    "price": 534527,
+    "quantity": 21
+  },
+  {
+    "address": "37053 Mariners Cove Circle",
+    "name": "Volvo",
+    "price": 465877,
+    "quantity": 17
+  },
+  {
+    "address": "15662 Steensland Hill",
+    "name": "Aston Martin",
+    "price": 121991,
+    "quantity": 29
+  },
+  {
+    "address": "6583 Straubel Alley",
+    "name": "Subaru",
+    "price": 363091,
+    "quantity": 9
+  },
+  {
+    "address": "84677 Darwin Place",
+    "name": "Volkswagen",
+    "price": 516943,
+    "quantity": 18
+  },
+  {
+    "address": "3 Monterey Crossing",
+    "name": "GMC",
+    "price": 688660,
+    "quantity": 41
+  },
+  {
+    "address": "48278 Washington Park",
+    "name": "Mazda",
+    "price": 36295,
+    "quantity": 23
+  },
+  {
+    "address": "0 Beilfuss Alley",
+    "name": "Nissan",
+    "price": 752035,
+    "quantity": 30
+  },
+  {
+    "address": "91 Prentice Way",
+    "name": "Jaguar",
+    "price": 108295,
+    "quantity": 37
+  },
+  {
+    "address": "70 3rd Alley",
+    "name": "Buick",
+    "price": 39580,
+    "quantity": 41
+  },
+  {
+    "address": "6 Cody Center",
+    "name": "Chevrolet",
+    "price": 607119,
+    "quantity": 19
+  },
+  {
+    "address": "6 Pennsylvania Junction",
+    "name": "Jeep",
+    "price": 611770,
+    "quantity": 42
+  },
+  {
+    "address": "0 American Ash Way",
+    "name": "Lexus",
+    "price": 837308,
+    "quantity": 27
+  },
+  {
+    "address": "481 Schmedeman Pass",
+    "name": "Kia",
+    "price": 190722,
+    "quantity": 17
+  },
+  {
+    "address": "7 Fallview Center",
+    "name": "Suzuki",
+    "price": 478181,
+    "quantity": 45
+  },
+  {
+    "address": "23243 International Parkway",
+    "name": "BMW",
+    "price": 200085,
+    "quantity": 23
+  },
+  {
+    "address": "69028 Golden Leaf Hill",
+    "name": "MINI",
+    "price": 140721,
+    "quantity": 13
+  },
+  {
+    "address": "998 Main Way",
+    "name": "Acura",
+    "price": 801241,
+    "quantity": 16
+  },
+  {
+    "address": "5768 Northfield Crossing",
+    "name": "Mazda",
+    "price": 649996,
+    "quantity": 41
+  },
+  {
+    "address": "83 Park Meadow Trail",
+    "name": "Porsche",
+    "price": 220882,
+    "quantity": 24
+  },
+  {
+    "address": "4428 Jenifer Point",
+    "name": "Volvo",
+    "price": 139463,
+    "quantity": 19
+  },
+  {
+    "address": "861 Garrison Lane",
+    "name": "Chevrolet",
+    "price": 731731,
+    "quantity": 11
+  },
+  {
+    "address": "754 Monument Court",
+    "name": "Ford",
+    "price": 631076,
+    "quantity": 45
+  },
+  {
+    "address": "399 Fuller Park",
+    "name": "Saab",
+    "price": 716119,
+    "quantity": 18
+  },
+  {
+    "address": "06557 Carberry Crossing",
+    "name": "Alfa Romeo",
+    "price": 347127,
+    "quantity": 48
+  },
+  {
+    "address": "7450 Farmco Street",
+    "name": "Bentley",
+    "price": 620555,
+    "quantity": 37
+  },
+  {
+    "address": "70 Declaration Circle",
+    "name": "Audi",
+    "price": 336754,
+    "quantity": 5
+  },
+  {
+    "address": "65965 Bluejay Terrace",
+    "name": "Chevrolet",
+    "price": 115464,
+    "quantity": 51
+  },
+  {
+    "address": "7013 Aberg Center",
+    "name": "Toyota",
+    "price": 58736,
+    "quantity": 13
+  },
+  {
+    "address": "2 Garrison Junction",
+    "name": "Oldsmobile",
+    "price": 485433,
+    "quantity": 44
+  },
+  {
+    "address": "013 Charing Cross Terrace",
+    "name": "Chevrolet",
+    "price": 656017,
+    "quantity": 49
+  },
+  {
+    "address": "83256 Grover Place",
+    "name": "Mitsubishi",
+    "price": 57133,
+    "quantity": 20
+  },
+  {
+    "address": "9360 Farragut Pass",
+    "name": "Volvo",
+    "price": 180346,
+    "quantity": 46
+  },
+  {
+    "address": "642 Farragut Drive",
+    "name": "Chevrolet",
+    "price": 358554,
+    "quantity": 26
+  },
+  {
+    "address": "07 Crowley Way",
+    "name": "Toyota",
+    "price": 779875,
+    "quantity": 10
+  },
+  {
+    "address": "04360 Dorton Center",
+    "name": "Mitsubishi",
+    "price": 534078,
+    "quantity": 18
+  },
+  {
+    "address": "46980 Clarendon Center",
+    "name": "Mercury",
+    "price": 116383,
+    "quantity": 29
+  },
+  {
+    "address": "1 Milwaukee Road",
+    "name": "Mercury",
+    "price": 377234,
+    "quantity": 30
+  },
+  {
+    "address": "55 Arizona Junction",
+    "name": "Chevrolet",
+    "price": 171923,
+    "quantity": 36
+  },
+  {
+    "address": "4 Elmside Street",
+    "name": "GMC",
+    "price": 380551,
+    "quantity": 15
+  },
+  {
+    "address": "4726 Becker Road",
+    "name": "Toyota",
+    "price": 90708,
+    "quantity": 38
+  },
+  {
+    "address": "9 8th Court",
+    "name": "Dodge",
+    "price": 232759,
+    "quantity": 21
+  },
+  {
+    "address": "65 Summit Terrace",
+    "name": "Toyota",
+    "price": 802708,
+    "quantity": 39
+  },
+  {
+    "address": "56 Mayer Parkway",
+    "name": "Honda",
+    "price": 628879,
+    "quantity": 40
+  },
+  {
+    "address": "8 Homewood Avenue",
+    "name": "Toyota",
+    "price": 404214,
+    "quantity": 36
+  },
+  {
+    "address": "679 Barby Circle",
+    "name": "Chevrolet",
+    "price": 437637,
+    "quantity": 5
+  },
+  {
+    "address": "697 Acker Way",
+    "name": "Infiniti",
+    "price": 817298,
+    "quantity": 8
+  },
+  {
+    "address": "54 Sunfield Park",
+    "name": "Mazda",
+    "price": 732138,
+    "quantity": 17
+  },
+  {
+    "address": "181 Toban Point",
+    "name": "Isuzu",
+    "price": 436180,
+    "quantity": 48
+  },
+  {
+    "address": "0457 Kropf Terrace",
+    "name": "Ford",
+    "price": 323500,
+    "quantity": 46
+  },
+  {
+    "address": "4029 Ruskin Crossing",
+    "name": "Chevrolet",
+    "price": 247022,
+    "quantity": 28
+  },
+  {
+    "address": "60405 Kedzie Crossing",
+    "name": "Hyundai",
+    "price": 64271,
+    "quantity": 33
+  },
+  {
+    "address": "8 Springs Avenue",
+    "name": "Subaru",
+    "price": 497310,
+    "quantity": 51
+  },
+  {
+    "address": "34 Magdeline Drive",
+    "name": "Dodge",
+    "price": 185702,
+    "quantity": 31
+  },
+  {
+    "address": "95 Armistice Road",
+    "name": "Mercedes-Benz",
+    "price": 52502,
+    "quantity": 24
+  },
+  {
+    "address": "77 Hoard Place",
+    "name": "Lincoln",
+    "price": 419104,
+    "quantity": 48
+  },
+  {
+    "address": "3098 Elka Lane",
+    "name": "Buick",
+    "price": 108437,
+    "quantity": 30
+  },
+  {
+    "address": "4600 Buell Terrace",
+    "name": "Scion",
+    "price": 564523,
+    "quantity": 18
+  },
+  {
+    "address": "55 Dunning Crossing",
+    "name": "Hyundai",
+    "price": 836172,
+    "quantity": 48
+  },
+  {
+    "address": "7 Mallory Circle",
+    "name": "Nissan",
+    "price": 377691,
+    "quantity": 34
+  },
+  {
+    "address": "61596 Doe Crossing Avenue",
+    "name": "Ford",
+    "price": 516695,
+    "quantity": 33
+  },
+  {
+    "address": "0489 Briar Crest Park",
+    "name": "Ford",
+    "price": 372755,
+    "quantity": 11
+  },
+  {
+    "address": "2 Vermont Avenue",
+    "name": "Lincoln",
+    "price": 149867,
+    "quantity": 7
+  },
+  {
+    "address": "82 Express Trail",
+    "name": "Maybach",
+    "price": 248175,
+    "quantity": 39
+  },
+  {
+    "address": "509 Jana Drive",
+    "name": "Acura",
+    "price": 379152,
+    "quantity": 41
+  },
+  {
+    "address": "5 Scofield Place",
+    "name": "BMW",
+    "price": 533299,
+    "quantity": 48
+  },
+  {
+    "address": "14 Graedel Drive",
+    "name": "Ford",
+    "price": 727172,
+    "quantity": 5
+  },
+  {
+    "address": "0999 Maywood Court",
+    "name": "Morgan",
+    "price": 538156,
+    "quantity": 14
+  },
+  {
+    "address": "31269 Schurz Trail",
+    "name": "Toyota",
+    "price": 519451,
+    "quantity": 14
+  },
+  {
+    "address": "6651 Melby Park",
+    "name": "Pontiac",
+    "price": 163371,
+    "quantity": 37
+  },
+  {
+    "address": "13 Redwing Point",
+    "name": "Mazda",
+    "price": 662977,
+    "quantity": 19
+  },
+  {
+    "address": "54625 Riverside Circle",
+    "name": "GMC",
+    "price": 652687,
+    "quantity": 33
+  },
+  {
+    "address": "84 Bobwhite Park",
+    "name": "Chevrolet",
+    "price": 811550,
+    "quantity": 48
+  }
+]
+
+

@@ -15,3 +15,8 @@
   - Spring Data Jpa
   - Model Mapper
  
+
+
+### LINK TO GENERATE FAKE DATA
+
+    https://www.mockaroo.com

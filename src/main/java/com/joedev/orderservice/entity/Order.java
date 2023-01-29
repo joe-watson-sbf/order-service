@@ -20,8 +20,21 @@ public class Order {
     private Long clientId;
     @OneToMany(fetch = FetchType.LAZY, targetEntity = OrderDetails.class)
     private List<OrderDetails> orderDetails;
-    private Instant createdOn = Instant.now();
+    private Instant createdOn;
     @Transient
-    private BigDecimal totalPrice;
+    private BigDecimal totalPrice = new BigDecimal(0);;
 
+    public Order(@NonNull Long clientId, List<OrderDetails> orderDetails) {
+        this.clientId = clientId;
+        this.orderDetails = orderDetails;
+        this.createdOn  = Instant.now();
+    }
+
+    public BigDecimal getTotalPrice() {
+        orderDetails
+                .forEach(orderDetails1 ->
+                        this.setTotalPrice(
+                                this.totalPrice.add(orderDetails1.getAmountTotal())));
+        return totalPrice;
+    }
 }

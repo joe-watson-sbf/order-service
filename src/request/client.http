@@ -1,0 +1,67 @@
+
+### GET ALL CLIENTS
+GET http://localhost:8080/api/clients
+
+### GET CLIENT BY ID
+GET http://localhost:8080/api/clients/6
+
+
+### GET ALL PRODUCTS
+GET http://localhost:8080/api/products
+
+### GET PRODUCT BY ID
+GET http://localhost:8080/api/products/1
+
+
+
+
+### PLACE AN ORDER
+GET http://localhost:8080/api/orders/model
+
+
+
+### PLACE AN ORDER
+POST http://localhost:8080/api/orders
+Content-Type: application/json
+
+
+{
+  "clientDto":{
+    "id": 3,
+    "name": "Jeff",
+    "address": "54773 Efferent Court"
+  },
+  "orderDetailsDto": [
+    {
+      "productDto": {
+        "id": 6
+      },
+      "quantity": 3
+    },
+    {
+      "productDto": {
+        "id": 15
+      },
+      "quantity": 2
+    },
+    {
+      "productDto": {
+        "id": 19
+      },
+      "quantity": 5
+    }
+  ]
+}
+
+
+
+
+### GET ALL ORDER
+GET http://localhost:8080/api/orders
+
+### GET ORDER BY ID
+GET http://localhost:8080/api/orders/1
+
+
+
+

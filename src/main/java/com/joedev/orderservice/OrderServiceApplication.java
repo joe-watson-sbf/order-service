@@ -3,11 +3,13 @@ package com.joedev.orderservice;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
+
 @SpringBootApplication
-public class OrderserviceApplication {
+public class OrderServiceApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(OrderserviceApplication.class, args);
+		SpringApplication.run(OrderServiceApplication.class, args);
 	}
+
 
 }

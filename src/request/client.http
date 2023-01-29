@@ -28,7 +28,7 @@ Content-Type: application/json
 {
   "clientDto":{
     "id": 3,
-    "name": "Jeff",
+    "name": "Joe Watson SBF",
     "address": "54773 Efferent Court"
   },
   "orderDetailsDto": [

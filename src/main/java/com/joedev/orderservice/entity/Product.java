@@ -21,6 +21,7 @@ public class Product {
     private BigDecimal price;
     @NonNull
     private Integer quantity;
+
     @Transient
     private Boolean active;
 

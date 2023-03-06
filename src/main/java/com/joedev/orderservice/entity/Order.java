@@ -22,7 +22,7 @@ public class Order {
     private List<OrderDetails> orderDetails;
     private Instant createdOn;
     @Transient
-    private BigDecimal totalPrice = new BigDecimal(0);;
+    private BigDecimal totalPrice = new BigDecimal(0);
 
     public Order(@NonNull Long clientId, List<OrderDetails> orderDetails) {
         this.clientId = clientId;

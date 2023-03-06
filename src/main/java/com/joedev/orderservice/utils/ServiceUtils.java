@@ -9,6 +9,8 @@ import java.util.List;
 
 public class ServiceUtils {
 
+    private ServiceUtils(){}
+
     public static void requiredNonNullObject(Object object){
         if(object==null){
             throw new BusinessException("Required non null object!", HttpStatus.FORBIDDEN);

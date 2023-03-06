@@ -40,11 +40,6 @@ public class ProductServiceImpl implements ProductService {
         repository.saveAll(list);
     }
 
-    @Override
-    public void updateProduct(ProductDto productDto) {
-        requiredNonNullObject(productDto);
-        repository.save(mapper.dtoToEntity(productDto));
-    }
 
     @Override
     public ProductDto getProductById(Long productId) {
